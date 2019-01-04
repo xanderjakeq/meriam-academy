@@ -18,9 +18,10 @@ html {
     top: 0;
     width: 100%;
     z-index: 10;
+    /* font-family: inherit; */
   }
   
-  @supports (position: sticky) {
+  /* @supports (position: sticky) {
     body {
       padding-top: 0;
     }
@@ -29,7 +30,7 @@ html {
       position: sticky;
     }
   
-  }
+  } */
   
   .navbar {
     position: relative;
@@ -69,6 +70,13 @@ html {
   
   .navbar .nav .item a {
     text-decoration: none;
+    color: inherit;
+  }
+
+  /* Active */
+  .navbar .nav .item .active{
+    /* text-decoration: underline; */
+    border-bottom: 3px solid slateblue;
     color: inherit;
   }
   
@@ -124,7 +132,15 @@ html {
     background-color: firebrick;
     transition: 0.5s ease;
   }
+
+  .scrolled.navbar .logo a h1{
+    font-size: 1em;
+    margin:0;
+    transition: 0.5s ease;
+  }
   
+
+  /* Sections --------------------------------- */
   .section {
     height: 100vh;
   }
