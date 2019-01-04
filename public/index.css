@@ -6,7 +6,13 @@ html {
     
   }
 
+body{
+  transform-style: preserve-3d;
+}
 
+h1{
+  margin:0;
+}
 
 /* NAV------------- */
 /* *{
@@ -18,19 +24,9 @@ html {
     top: 0;
     width: 100%;
     z-index: 10;
-    /* font-family: inherit; */
+    font-family: inherit;
   }
   
-  /* @supports (position: sticky) {
-    body {
-      padding-top: 0;
-    }
-  
-    header {
-      position: sticky;
-    }
-  
-  } */
   
   .navbar {
     position: relative;
@@ -143,19 +139,102 @@ html {
   /* Sections --------------------------------- */
   .section {
     height: 100vh;
-  }
-  
-  .one {
-    background-color: antiquewhite;
-  }
-  .two {
-    background-color: darkcyan;
-  }
-  .three {
-    background-color: honeydew;
-  }
-  .four {
-    background-color: antiquewhite;
+    /* padding-top: 5vh; */
   }
 
+  .inner{
+
+  }
+  
+  .home {
+    background-color: antiquewhite;
+    background-image: url(https://images.unsplash.com/photo-1511949860663-92c5c57d48a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-blend-mode: luminosity;
+  }
+
+  .home::after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) scale(1.5);
+    /* Force the background image to fill the whole element. */
+    background-size: 100%;
+    /* Keep the image from overlapping sibling elements. */
+    z-index: -1;
+  }
+
+  .about {
+    background-color: darkcyan;
+  }
+  .contact {
+    background-color: honeydew;
+  }
+  .footer {
+    height: 10vh;
+    color: white;
+    background-color: black;
+  }
+
+  /* SECTION content -------------------------- */
+.home h1{
+  font-size: 9vw;
+  justify-content: flex-start;
+  color: black;
+  /* line-height: 3em; */
+}
+
+.home .inner h2{
+  font-size:2em;
+}
+.home h2::after{
+  content: '|';
+  display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Custom cursor animation*/
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+.typed-cursor{
+  opacity: 0;
+  display: none;
+}
+
+.home .inner{
+  margin: 10%;
+  padding: 3%;
+  border-bottom: 20px solid white;
+  background-color: cornsilk; 
+  display: inline-flex;
+  content: fit-content;
+}
+
+.home .inner img{
+  width:50%;
+  height: 50%;
+}
    

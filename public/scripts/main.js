@@ -13,6 +13,7 @@ $(function() {
         section : ".section",
 
         scrollbars:false,
+        interstitialSection:".footer",
       before:function(i,panels) {
 
         var ref = panels[i].attr("data-section-name");
@@ -45,5 +46,10 @@ $(function() {
         */
         $(".nav a").on("click",$.scrollify.move);
       }
+    });
+
+    var typed = new Typed('#slogan', {
+      strings: [ "'Providing Excellent Foundation for your Child's Future' ^1000", "Call us (202) 248-1848"],
+      typeSpeed: 50
     });
 });
