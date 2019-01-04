@@ -1,4 +1,4 @@
-html, body {
+html {
     height: 100vh;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,28 +9,18 @@ html, body {
 
 
 /* NAV------------- */
-*{
+/* *{
     box-sizing: border-box;
   }
-  
-  body {
-    /* position: absolute;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    padding-top: 80px;
-    height: 1900px; */
-  }
-  
-  header {
+   */
+   header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
   }
   
-  /* @supports (position: sticky) {
+  @supports (position: sticky) {
     body {
       padding-top: 0;
     }
@@ -39,7 +29,7 @@ html, body {
       position: sticky;
     }
   
-  } */
+  }
   
   .navbar {
     position: relative;
@@ -134,36 +124,9 @@ html, body {
     background-color: firebrick;
     transition: 0.5s ease;
   }
-
-    a[ id= "main" ]:target ~ #main article.panel {
-        -webkit-transform: translateY( 0px);
-        transform: translateY( 0px );
-    }
-
-    a[ id= "about" ]:target ~ #main article.panel {
-        -webkit-transform: translateY( -500px );
-        transform: translateY( -500px );
-    }
-    a[ id= "contact" ]:target ~ #main article.panel {
-        -webkit-transform: translateY( -1000px );
-        transform: translateY( -1000px );
-    }
-
-  /* BODY/Sections--------------------- */
-  .parent {
-    overflow-y: scroll;
-    height: 100vh;
-    width: 100vw;
-    /* scroll-snap-type: mandatory; */
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y proximity;
-    scroll-behavior: smooth;
-  }
   
-  section {
+  .section {
     height: 100vh;
-    scroll-snap-align: start;
-    position: relative;
   }
   
   .one {
