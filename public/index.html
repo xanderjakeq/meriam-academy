@@ -33,6 +33,15 @@
     
   </head>
   <body>
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      
       <header>
         <div class="navbar">
           <ul class="nav">
@@ -67,14 +76,102 @@
         </div>
 
       </div>
-      <div data-section-name="about" class="section about">
-
+      <div data-section-name="about" class="section about about-item">
+        <h2>Mission</h2>
+        <p>
+            Meriam Academy Child Learning Center provides support in reaching our children’s highest   academic potential through language skills, social-emotional, and physical development. Our center provides and maintains a developmentally appropriate practices and stimulating learning environment that promotes academic skills that enables individual to fully develop into a productive citizens.
+        </p>
       </div>
+      <div data-section-name="promise" class="section child-is-important about-item">
+        <h2>Vision</h2>
+        <p>We look forward to provide a quality educational experiences for each child enrolled. As we prepare your child for the challenges of the next educational setting, your child will find a loving, caring environment that will stimulate their curiosity and set them on a path to be fully equipped for each step they take.
+
+            meriamacademy.org in Washington Day Care Center in Washington</p>
+      </div>
+      
+      <div data-section-name="services" class="section services about-item">
+        <h2>Services</h2>
+        <div class="two-column">
+          <div class="accept">
+            <h3>We Accept:</h3>
+          <ul>
+            <li><p>infants ages 3 months to 5 year old children</p></li>
+            <li><p>subsidy (voucher)
+                private payee</p></li>
+          </ul>
+        </div>
+        <div class="other">
+          <ul>
+            <li class="extra"><p>We also provide free food for breakfast, lunch, afternoon snacks... and dinner (for non-traditional children)</p></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+
       <div data-section-name="contact" class="section contact">
+        <div class="contact-info">
+          <h2 >Call us</h2>
+          <a href="tel:202-248-1848">202-248-1848</a>
+          <p id="visit"></p>
+          <ul>
+            <li>Mon-Fri  7:00 am – 6:00 pm</li>
+            <li>Sat/Sun Closed</li>
+          </ul>
+        </div>
 
+        <div class="map">
+          <iframe width="600" height="450" frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?q=704+Kennedy+Street,+N.W.+Washington,+District+of+Columbia+20011,+United+States&key=AIzaSyCPjiZVWxbfDPwuC5Y_nSyNo2WQDa-xock" allowfullscreen></iframe>
+        </div>
       </div>
-      <div class="footer">
-        <h1>footer</h1>
+
+      <div data-section-name="social" class="section social">
+        <div class="facebook">
+          <h2>Facebook</h2>
+          <div class="fb-container">
+            <div class="fb-page" 
+              data-tabs="events,timeline,messages"
+              data-href="https://www.facebook.com/pg/meriamacademy/"
+              data-width="500" 
+              data-hide-cover="false"></div>
+          </div>
+          </div>
+
+        <div class="paypal">
+                  <h2>
+                      Help Our Cause
+                    <!-- <hr data-ux="SectionHeadingHR" class="x-el x-el-hr px_-border-color-rgb226__226__226 px_-border-bottom-width-2px px_-border-style-solid px_-mt-20px px_-mb-0 px_-w-50px px_-ml-auto px_-mr-auto px_-ff-_Playfair_Display___Georgia__serif px_-fs-31 _mdpx_-fs-41 _lgpx_-fs-43 x-d-ux"> -->
+                  </h2>
+                  <p>Your support and contributions will enable us to meet our goals and improve conditions. Your generous donation will fund our mission.</p>
+        </div>
+        
+      </div>
+
+      <div data-section-name="footer" class="section footer">
+        <!-- <h1>footer</h1> -->
+        <!-- Begin Mailchimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          #mc_embed_signup{background: none; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+          #mc-embedded-subscribe-form{text-align: none !important;}
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+        <form action="https://facebook.us7.list-manage.com/subscribe/post?u=e4ccb2675d6586588fbb4c8e1&amp;id=4188e5a303" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <!-- <div id="mc_embed_signup_scroll"> -->
+          <label for="mce-EMAIL">Subscribe to our mailing list</label>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e4ccb2675d6586588fbb4c8e1_4188e5a303" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            <!-- </div> -->
+        </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+
+        <h3>Copyright © 2019 meriamacademy.org - All Rights Reserved.</h3>
       </div>
       
 
