@@ -24,16 +24,15 @@
       #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
       #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
       #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
+      /* @media (max-width: 600px) {
         body, #message { margin-top: 0; background: white; box-shadow: none; }
         body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+      }*/
+    </style> 
     <link rel="stylesheet" href="index.css">
     
   </head>
   <body>
-      <div id="fb-root"></div>
       <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
@@ -128,11 +127,12 @@
       <div data-section-name="social" class="section social">
         <div class="facebook">
           <h2>Facebook</h2>
-          <div class="fb-container">
+          <div id="fb-root"></div>
+          <div class="fb-container" >
             <div class="fb-page" 
               data-tabs="events,timeline,messages"
               data-href="https://www.facebook.com/pg/meriamacademy/"
-              data-width="500" 
+              data-width="500"
               data-hide-cover="false"></div>
           </div>
           </div>
@@ -140,7 +140,7 @@
         <div class="paypal">
                   <h2>
                       Help Our Cause
-                    <!-- <hr data-ux="SectionHeadingHR" class="x-el x-el-hr px_-border-color-rgb226__226__226 px_-border-bottom-width-2px px_-border-style-solid px_-mt-20px px_-mb-0 px_-w-50px px_-ml-auto px_-mr-auto px_-ff-_Playfair_Display___Georgia__serif px_-fs-31 _mdpx_-fs-41 _lgpx_-fs-43 x-d-ux"> -->
+                   <!-- <hr data-ux="SectionHeadingHR" class="x-el x-el-hr px_-border-color-rgb226__226__226 px_-border-bottom-width-2px px_-border-style-solid px_-mt-20px px_-mb-0 px_-w-50px px_-ml-auto px_-mr-auto px_-ff-_Playfair_Display___Georgia__serif px_-fs-31 _mdpx_-fs-41 _lgpx_-fs-43 x-d-ux"> -->
                   </h2>
                   <p>Your support and contributions will enable us to meet our goals and improve conditions. Your generous donation will fund our mission.</p>
         </div>

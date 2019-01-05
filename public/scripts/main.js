@@ -8,17 +8,27 @@ $(document).ready(function() {
     });
   });
 
+  console.log($('.section').width(), $('.section').height())
+  let offsetForScrollify = 1;
+  if($( window ).width() < 600){
+    $('.fb-container').css('width', '300px')
+    $('.fb-page').attr('data-height','70px')
+    $('.logo').remove()
+    offsetForScrollify = 0;
+  }
+
 $(function() {
     $.scrollify({
         section : ".section",
-        offset:1,
+        offset:offsetForScrollify,
         scrollbars:false,
         interstitialSection:".footer",
       before:function(i,panels) {
 
         var ref = panels[i].attr("data-section-name");
-        console.log(i)
         
+        console.log(i,ref)
+
         $(".nav .active").removeClass("active");
         if(i>=1 && i<=3){
           $(".nav").find("a[href=\"#" + 'about' + "\"]").addClass("active");
