@@ -15,6 +15,7 @@ $(document).ready(function() {
     $('.fb-page').attr('data-height','70px')
     $('.logo').remove()
     offsetForScrollify = 0;
+    // $.scrollify.disable()
   }
 
 $(function() {
